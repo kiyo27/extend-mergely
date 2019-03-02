@@ -47,7 +47,6 @@ function checkOGPProperties(response) {
 
   const checkOgUrl = new Promise(function(resolve, reject) {
     const re = /.*\/$/;
-    const myArray = re.test(ogUrl);
     if (re.test(ogUrl)) {
       resolve("og:url => o");
     } else {
